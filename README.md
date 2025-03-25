@@ -1,4 +1,4 @@
-# <img src=".github/assets/logo.png" alt="Xbox Logo" align="right" width="175px"> Xbox 360 Metro UI v1
+# <img src=".github/assets/logo.png" alt="Xbox Logo" align="right" width="125px"> Xbox 360 Metro UI v1
  Recreation of the Xbox 360 Metro UI in HTML5!<br>
  Full recreation planned for the future
 
