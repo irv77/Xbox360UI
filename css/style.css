@@ -1,0 +1,249 @@
+body {
+    
+    background: url(../assets/images/background.png);
+    background-size: auto 100vh; 
+    /*
+    background: url(../assets/images/bg3.png);
+    background-size: 100vw 100vh;
+    */
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    color: #a3a4a8;
+    margin: 0;
+    cursor: pointer;
+    font-size: 2.5vw;
+    font-weight: 100;
+}
+
+h2 {
+    color: #ebebeb;
+    margin: 0.3vw 0.7vw;
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+
+h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+h1.selected {
+    color: white;
+}
+
+.tile.selected {
+    opacity: 1;
+}
+
+.user {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 5vw;
+    top: 2.5vw;
+    gap: 1vw;
+}
+
+.user img {
+    width: 2.5vw;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 7.8vw;
+    gap: 2.5vw;
+    font-size: 2.5vh;
+}
+
+.searchbar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 46vh;
+    width: 4.5vw;
+    height: 4vw;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.searchbar h1 {
+    color: #ebebeb;
+    font-size: 3vw;
+}
+
+.tiles {
+    display: flex;
+    width: fit-content;
+    margin-left: 11vw;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    margin: 3vw 7vw;
+    width: 64vw;
+    gap: 0.4vw;
+    opacity: 0.75;
+    transition: opacity 0.3s ease-in-out
+}
+
+.tile.big {
+    width: 77.9vw;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    gap: 0.4vw;
+    max-height: 28.7vw;
+}
+
+.middle-side {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.4vw;
+    max-width: 55.2vw;
+    max-height: 27.4vw;
+}
+
+.right-side {
+    width: 50.1vw;
+}
+
+.right-side.big {
+    width: 71vw;
+}
+
+.banner {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/images/logo.png) center center / 25vw no-repeat #1d1d1d;
+    transition: scale 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.banner:hover {
+    scale: 1.05;
+    box-shadow: black 0 0 20px;
+}
+
+.rectangle {
+    display: flex;
+    align-items: flex-end;
+    width: 13.5vw;
+    height: 9.3vw;
+    cursor: pointer;
+    transition: scale 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.rectangle:hover {
+    scale: 1.1;
+    box-shadow: black 0 0 20px;
+}
+
+.rectangle.one {background: url(../assets/images/icons/open-tray.png) center center / 6vw no-repeat #008a00;}
+.rectangle.one:hover {background: url(../assets/images/icons/open-tray.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.two {background: url(../assets/images/icons/my-pins.png) center center / 6vw no-repeat #008a00;}
+.rectangle.two:hover {background: url(../assets/images/icons/my-pins.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.three {background: url(../assets/images/icons/recent.png) center center / 6vw no-repeat #008a00;}
+.rectangle.three:hover {background: url(../assets/images/icons/recent.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.four {background: url(../assets/images/icons/friends.png) center center / 6vw no-repeat #008a00;}
+.rectangle.four:hover {background: url(../assets/images/icons/friends.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.five {background: url(../assets/images/icons/placeholder.png) center center / 6vw no-repeat #008a00;}
+.rectangle.five:hover {background: url(../assets/images/icons/placeholder.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.six {background: url(../assets/images/icons/sign-out.png) center center / 6vw no-repeat #008a00;}
+.rectangle.six:hover {background: url(../assets/images/icons/sign-out.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.seven {background: url(../assets/images/icons/games.png) center center / 6vw no-repeat #008a00;}
+.rectangle.seven:hover {background: url(../assets/images/icons/games.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.eight {background: url(../assets/images/icons/store.png) center center / 6vw no-repeat #008a00;}
+.rectangle.eight:hover {background: url(../assets/images/icons/store.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.nine {background: url(../assets/images/icons/search.png) center center / 6vw no-repeat #008a00;}
+.rectangle.nine:hover {background: url(../assets/images/icons/search.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.ten {background: url(../assets/images/icons/tiles.png) center center / 6vw no-repeat #008a00;}
+.rectangle.ten:hover {background: url(../assets/images/icons/tiles.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.eleven {background: url(../assets/images/icons/store.png) center center / 6vw no-repeat #008a00;}
+.rectangle.eleven:hover {background: url(../assets/images/icons/store.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.twelve {background: url(../assets/images/icons/search.png) center center / 6vw no-repeat #008a00;}
+.rectangle.twelve:hover {background: url(../assets/images/icons/search.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.thirteen {background: url(../assets/images/icons/xbox.png) center center / 6vw no-repeat #008a00;}
+.rectangle.thirteen:hover {background: url(../assets/images/icons/xbox.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.fourteen {background: url(../assets/images/icons/placeholder.png) center center / 6vw no-repeat #008a00;}
+.rectangle.fourteen:hover {background: url(../assets/images/icons/placeholder.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.fifteen {background: url(../assets/images/icons/tiles.png) center center / 6vw no-repeat #008a00;}
+.rectangle.fifteen:hover {background: url(../assets/images/icons/tiles.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.sixteen {background: url(../assets/images/icons/xbox.png) center center / 6vw no-repeat #008a00;}
+.rectangle.sixteen:hover {background: url(../assets/images/icons/xbox.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.seventeen {background: url(../assets/images/icons/search.png) center center / 6vw no-repeat #008a00;}
+.rectangle.seventeen:hover {background: url(../assets/images/icons/search.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.eighteen {background: url(../assets/images/icons/tiles.png) center center / 6vw no-repeat #008a00;}
+.rectangle.eighteen:hover {background: url(../assets/images/icons/tiles.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.nineteen {background: url(../assets/images/icons/store.png) center center / 6vw no-repeat #008a00;}
+.rectangle.nineteen:hover {background: url(../assets/images/icons/store.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.rectangle.twenty {background: url(../assets/images/icons/search.png) center center / 6vw no-repeat #008a00;}
+.rectangle.twenty:hover {background: url(../assets/images/icons/search.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+
+.square {
+    display: flex;
+    align-items: flex-end;
+    width: 13.5vw;
+    height: 13.5vw;
+    cursor: pointer;
+    transition: scale 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.square:hover {
+    scale: 1.1;
+    box-shadow: black 0 0 20px;
+}
+
+.square.one {background: url(../assets/images/icons/system.png) center center / 6vw no-repeat #008a00;}
+.square.one:hover {background: url(../assets/images/icons/system.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.square.two {background: url(../assets/images/icons/profile.png) center center / 6vw no-repeat #008a00;}
+.square.two:hover {background: url(../assets/images/icons/profile.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.square.three {background: url(../assets/images/icons/preferences.png) center center / 6vw no-repeat #008a00;}
+.square.three:hover {background: url(../assets/images/icons/preferences.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.square.four {background: url(../assets/images/icons/kinect.png) center center / 6vw no-repeat #008a00;}
+.square.four:hover {background: url(../assets/images/icons/kinect.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.square.five {background: url(../assets/images/icons/placeholder.png) center center / 6vw no-repeat #008a00;}
+.square.five:hover {background: url(../assets/images/icons/placeholder.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.square.six {background: url(../assets/images/icons/placeholder.png) center center / 6vw no-repeat #008a00;}
+.square.six:hover {background: url(../assets/images/icons/placeholder.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.square.seven {background: url(../assets/images/icons/family.png) center center / 6vw no-repeat #008a00;}
+.square.seven:hover {background: url(../assets/images/icons/family.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+.square.eight {background: url(../assets/images/icons/sign-out.png) center center / 6vw no-repeat #008a00;}
+.square.eight:hover {background: url(../assets/images/icons/sign-out.png) center center / 6vw no-repeat, linear-gradient(to left top, #008a00, #58a658);}
+
+.tips {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 2.2vw;
+    left: 9vw;
+    gap: 0.2vw;
+}
+
+.tips img {
+    width: 2vw;
+    height: auto;
+}
+
+.tips h2 {
+    margin: 0 1vw 0 0;
+    font-size: 1.5vw;
+    text-shadow: 0 0 2px black;
+}
